@@ -7,11 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy via FTP
-        uses: appleboy/scp-action@v0.1.7
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: 'buezu09.ch'
+          server: 'buezu09.ch'
           username: 'buezu09.ch'
           password: 'Buezu1909$'
-          port: 21
-          source: "."
-          target: "/github.buezu09.ch//public_html/"
+          server-dir: "/github.buezu09.ch/public_html/"
