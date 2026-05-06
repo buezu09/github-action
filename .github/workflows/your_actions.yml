@@ -6,12 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      # Here is the deployment action
-      - name: Upload from public_html via FTP
-        uses: airvzxf/ftp-deployment-action@latest
+      - name: Deploy via FTP
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          remote_dir: '/github.buezu09.ch/public_html'
+          server: 'lx61.hoststar.hosting'
+          username: 'buezu09.ch'
+          password: 'Buezu1909$'
+          server-dir: '/github.buezu09.ch/public_html'
