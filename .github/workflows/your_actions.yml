@@ -12,4 +12,4 @@ jobs:
           server: 'lx61.hoststar.hosting'
           username: 'buezu09.ch'
           password: 'Buezu1909$'
-          server-dir: '/github.buezu09.ch/public_html'
+          server-dir: '/github.buezu09.ch/public_html/'
