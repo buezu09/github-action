@@ -13,3 +13,4 @@ jobs:
           username: 'buezu09.ch'
           password: 'Buezu1909$'
           server-dir: "/github.buezu09.ch/public_html/"
+          protocol: ftp
